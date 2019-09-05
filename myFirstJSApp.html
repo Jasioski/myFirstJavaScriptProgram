@@ -1,42 +1,36 @@
 <!DOCTYPE html>
 <html>
-<body>
+	<body>
+		<h2>My First Web Page</h2>
+		<p>Testing increment and decrement of a number using a variable.</p>
 
-<h2>My First Web Page</h2>
-<p>Testing increment and decrement of a number using a variable.</p>
+		<p id = "btnDisclaimer"></p>
+		<p id = "date"></p>
 
-<p id = "btnDisclaimer"></p>
-<p id = "date"></p>
+		<button onclick = 'getElementById("num").innerHTML = inc()'>Increment</button> 
+		<button onclick = 'getElementById("num").innerHTML = dec()'>Decrement</button>
+		<button onclick = 'getElementById("date").innerHTML = new Date()'>Date</button>
+		<button onclick = 'document.write("")'>Delete Page</button>
 
-<button onclick = 'getElementById("num").innerHTML = inc()'>Increment</button> 
-<button onclick = 'getElementById("num").innerHTML = dec()'>Decrement</button>
-<button onclick = 'getElementById("date").innerHTML = new Date()'>Date</button>
-<button onclick = 'document.write("")'>Delete Page</button>
-
-<p id = "num"></p> 
-
-
-<script>
-alert("This is my first web program!");
-window.alert("Welcome...");
-document.getElementById("num").innerHTML = 0;
-document.getElementById("btnDisclaimer").innerHTML = 'Check out the buttons below!';
-var x = 0;
-
-function inc() {
-	x = x + 1;
-	return x;
-}
-
-function dec() {
-	x = x - 1;
-	return x; 
-}
-
-</script>
+		<p id = "num"></p> 
 
 
+		<script>
+			alert("This is my first web program!");
+			window.alert("Welcome...");
+			document.getElementById("num").innerHTML = 0;
+			document.getElementById("btnDisclaimer").innerHTML = 'Check out the buttons below!';
+			var x = 0;
 
+			function inc() {
+				x = x + 1;
+				return x;
+			}
 
-</body>
+			function dec() {
+				x = x - 1;
+				return x; 
+			}
+		</script>
+	</body>
 </html> 
